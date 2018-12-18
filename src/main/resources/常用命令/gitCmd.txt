@@ -1,0 +1,11 @@
+1.在根目录，将本项目变成git项目
+    git init
+2. 添加跟踪的目录及文件
+    git add .\src\ .\.classpath .\pom.xml
+3. 提交的本地仓库
+    git commit -m "first commit"
+4. 连接远程仓库地址
+    git remote add origin https://github.com/nannanlovelijuan/test.git
+5. 将本地跟踪的代码变更推送到github
+    git push -u origin master
+6. 输入用户名密码
