@@ -8,4 +8,6 @@
     git remote add origin https://github.com/nannanlovelijuan/test.git
 5. 将本地跟踪的代码变更推送到github
     git push -u origin master
+6. 将远程代码拉到本地
+    git pull origin master
 6. 输入用户名密码
