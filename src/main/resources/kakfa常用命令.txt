@@ -1,0 +1,19 @@
+
+版本1.1.1
+1.控制台生成者
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-console-producer.sh --topic testVsCode --broker-list cluster2-slave2:9092
+2.控制台消费者
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-console-consumer.sh --topic testVsCode --bootstrap-server cluster2-slave2:9092
+3.查看所有主题
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-topics.sh --zookeeper cluster2-slave2:2181 --describe
+4.查看所有group
+a.查询存在zk上的group信息
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-consumer-groups.sh --zookeeper cluster2-slave2:2181 --list
+b.查询存在kafka的group信息
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-consumer-groups.sh --bootstrap-server cluster2-slave2:9092 --list
+5.查看某group(testWorkThread)的消费情况
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-consumer-groups.sh  --bootstrap-server cluster2-slave2:9092 --group testWorkThread --describe
+6.创建主题(未在本版本验证)
+/home/kafka/kafka_2.11-1.1.1/bin/kafka-topics.sh --create --zookeeper cluster2-slave2:2181 --replication-factor 3 --partitions 3 --topic 1_mall_sales_order
+
+
